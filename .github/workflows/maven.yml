@@ -43,7 +43,7 @@ jobs:
     - name: checkstyle results
       uses: actions/upload-artifact@v1
       with:
-        name: results
+        name: checkstyle_results
         path: target/checkstyle-result.xml
 
   pmd:
