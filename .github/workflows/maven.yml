@@ -75,7 +75,7 @@ jobs:
       with:
         java-version: 1.8
     - name: control with spotbugs
-      run: mvn spotbugs:spotbugs
+      run: mvn -B compile spotbugs:spotbugs
     - name: spotbugs results
       uses: actions/upload-artifact@v1
       with:
