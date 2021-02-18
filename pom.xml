@@ -80,6 +80,25 @@
                     <verbose>true</verbose>
                 </configuration>
             </plugin>
+
+            <!-- Spotbugs plugin -->
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.1.3</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs</artifactId>
+                        <version>4.1.4</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <!-- Optional directory to put spotbugs xdoc xml report -->
+                    <xmlOutputDirectory>target</xmlOutputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
