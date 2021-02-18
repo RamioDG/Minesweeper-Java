@@ -93,11 +93,6 @@
                         <version>4.1.4</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <xmlOutput>true</xmlOutput>
-                    <!-- Optional directory to put spotbugs xdoc xml report -->
-                    <xmlOutputDirectory>target</xmlOutputDirectory>
-                </configuration>
             </plugin>
         </plugins>
     </build>
